@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}   
+    body{
+        font-family: 'SUIT-Regular';
+        padding-top: 100px;
+        max-width: 1200px;
+        
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    .header{
+        max-width: 1200px; margin: 0 auto;
+        height: 120px;
+         padding: 1rem;
+        color: gray;
+        background:white;
+         font-weight: bold;
+         font-size: 13pt;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+         top: 0;
+         left: 0;
+        right: 0;
+        z-index:99;
+    }
+    
+
+    table.center{
+        position: relative;
+        transform: translate(35%, 20%);
+    justify-content: center;  /*가로 중앙*/
+    align-items: center; }
+    
+    
+    .slider {
+        width: 560px;
+        height: 315px;
+        
+        margin: 10px;
+        overflow: hidden;
+    }
+
+    .menu{
+     margin: 5px;
+     transition: all 1s; 
+    }
+
+    #main{
+        position: absolute;
+        left: 40%;
+        top: 5px;
+    }
+
+    div.allergy{
+        width: 50%;
+        height: auto;
+        position: absolute;
+        text-align: center;
+        margin: auto;
+        font-size: large;
+        transform: translate(50%, 20%);
+    }
+
+
+    #search{
+        outline: none;
+        border: none;
+        position: absolute;
+        border-bottom: 1px solid lightgray;
+        transform: translate(14%, 20%);
+        text-align: center;
+        color: gray;
+    }
+
+    .img-btn{
+        position:relative;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        left:2%;
+        top: 10px;
+    }
+
+    .best{
+        width: auto;
+        transform: translate(30%, 35%);
+    }
+   
+    td.feed img{
+        text-align: center;
+        transition: all 0.2s linear; 
+    }
+    td.feed img:hover{
+        transform: scale(1.2);
+    }
+
+    .feedtxt{
+        position:relative;
+        transform: translate(40%, 145%);
+        z-index: 1;
+    }
+
+    .feed{
+        transform: translate(36%, 0);
+    }
+   
+    #custom:hover{
+        color:rgb(10,88,74);
+        text-transform:uppercase;
+    }
+    #mypage:hover{
+        color:rgb(10,88,74);
+        text-transform:uppercase;
+    }
+    #login:hover{
+        color:rgb(10,88,74);
+        text-transform:uppercase;
+    }
+
+    .menus {
+    width: 1200px;
+    position:absolute;
+    overflow: hidden;
+    transform: translate(352px, 0%);
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .menus > li {
+      width: 20%; 
+      float: left;
+      text-align: center;
+      line-height: 50px;
+      background-color: rgb(10,88,74);
+      overflow: hidden;
+      
+    }
+
+    .menus a {
+      color: #fff;
+      text-decoration: none;
+      
+    }
+
+    .submenu > li {
+      line-height: 50px;
+      background-color: #cfd6cd;
+      float:none;
+    }
+
+    .submenu {
+      height: 0;
+      overflow: hidden;
+    }
+
+    .menus > li:hover {
+      background-color: #adb3ab;
+      transition-duration: 0.5s;
+    }
+
+    .menus > li:hover .submenu {
+      height: 250px;
+      transition-duration: 1s;}
+
+      .feedtxts{
+     text-decoration: none;
+     color: #000000;
+      }
+
+      .feedtxts p{
+        position: absolute;
+        z-index: 20;
+        font-weight: 600;
+        font-size: 15px;
+
+      }
+
+      #now{
+        top: 780px;
+        left: 660px;
+      }
+      #turk{
+        top: 780px;
+        left: 880px;
+      }
+      #fish{
+        top: 780px;
+        left: 1100px;
+      }
+
+      #btn{
+        border: 0;
+        background-color: transparent;
+        font-family: 'SUIT-Regular';
+        font-size: 13pt;
+        font-weight: bold;
+        color: gray;
+      }
+
+      #lstbtn{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 600px;
+        height: 50px;
+        border-radius: 20px;
+        border: 2px solid rgb(10,88,74);
+        font-size: 20pt;
+        font-weight: 600;
+        color: rgb(10,88,74);
+        background-color: white;
+        
+    }

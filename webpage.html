@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="webstyle.css">
+    <title>dogtionary</title>
+<style>
+
+
+</style>
+
+<script>
+  let win=null;
+
+  function openWin(){
+    win=window.open("login.html", "_blank",
+    "width=500, height=500, left=600 top=280")
+  }
+  function closeWin(){
+        if(win!=null){
+            win.close();
+            win=null;
+        }
+       }
+       
+</script>
+</head>
+<body>
+    <div>
+    <header class="header">
+        <input type="text" value="상품명 검색" onfocus="this.value=''" id="search" name="search" style="width:250px; height:35px;">
+        <button class="img-btn"><img src="./images/searchgreen.png"></button>
+        <nav>
+            <div id="main"><img src="./images/독셔너리green.png" alt=""></div>
+          <span class="menu" id="custom">고객센터</span>
+          <span class="menu" id="mypage">MY PAGE</span>
+          <span class="menu" id="login"><button onclick="openWin()" id="btn">로그인</button></span>
+        </nav>
+      </header>
+    <br>
+
+    <ul class="menus">
+        <li>
+          <a href="#">사료</a>
+          <ul class="submenu">
+            <li><a href="#">건식 사료</a></li>
+            <li><a href="#">소프트 사료</a></li>
+            <li><a href="#">습식 사료</a></li>
+            <li><a href="#">화식 사료</a></li>
+            <li><a href="#">동결 사료</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">건강</a>
+          <ul class="submenu">
+            <li><a href="#">유산균</a></li>
+            <li><a href="#">오메가3</a></li>
+            <li><a href="#">관절/뼈</a></li>
+            <li><a href="#">모질</a></li>
+            <li><a href="#">구강 건강</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">간식</a>
+          <ul class="submenu">
+            <li><a href="#">육포/저키형</a></li>
+            <li><a href="#">수제 건조 간식</a></li>
+            <li><a href="#">음용형</a></li>
+            <li><a href="#">비스킷</a></li>
+            <li><a href="#">껌</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">위생</a>
+          <ul class="submenu">
+            <li><a href="#">샴푸</a></li>
+            <li><a href="#">컨디셔너</a></li>
+            <li><a href="#">에센스</a></li>
+            <li><a href="#">구강</a></li>
+            <li><a href="#">미용</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">의류</a>
+          <ul class="submenu">
+            <li><a href="#">상의</a></li>
+            <li><a href="#">아우터</a></li>
+            <li><a href="#">올인원</a></li>
+            <li><a href="#">신발</a></li>
+            <li><a href="#">액세서리</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+    <table class="center">
+        <tr>
+            <td><iframe width="560" height="315" src="https://www.youtube.com/embed/dfDVeoaKLFw?si=sda_eGPKp_RU3FJp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+            <td class="slide"><img src="./images/oilsale.png"></td>
+        </tr>
+    </table>
+
+    <div class="feedtxt"> <h2>이달의 베스트 사료</h2>
+        <p>주성분은 상세 페이지에서 확인 가능합니다.</p></div>
+
+    <div class="best">
+        <table class="feed">
+            <tr>
+                <td class="feed"><img src="./images/feed1.png" width="200px"></td>
+                <td class="feed"><img src="./images/feed2.png" width="200px"></td>
+                <td class="feed"><img src="./images/feed3.png" width="200px"></td>
+            </tr>
+          </table>
+        <br>
+    </div>
+<br>
+      <a href="#" class="feedtxts">
+      <p id="now">나우 퍼피 스몰브리드 2.72kg</p>
+      <p id="turk">오리젠 퍼피 스몰브리드 2kg</p>
+      <p id="fish">오리젠 6 피쉬 독 2kg</p>
+      </a>
+      <br>
+
+
+    <div class="allergy">
+      <hr style="color: lightgray;"><br>
+      <label for="allergic" class="allergic"><h3>알레르기</h3>
+        <input type="checkbox" class="alg" value="chicken"> 닭고기
+        <input type="checkbox" class="alg" id="alg1" value="duck"> 오리고기
+        <input type="checkbox" class="alg" id="alg2" value="beef"> 소고기
+        <input type="checkbox" class="alg" id="alg3" value="pork"> 돼지고기
+        <input type="checkbox" class="alg" id="alg4" value="lamb"> 양고기
+        <input type="checkbox" class="alg" id="alg5" value="turkey"> 칠면조
+        <input type="checkbox" class="alg" id="alg6" value="salmon"> 연어
+        <span class="on"></span>
+    </label>
+      <br><br>
+      <label for="age"><h3>연령</h3>
+        <input type="radio" class="age" name="age" id="age1" value="puppy"> 퍼피
+        <input type="radio" class="age" name="age" id="age2" value="adult"> 어덜트
+        <input type="radio" class="age" name="age" id="age3" value="senior"> 시니어
+    </label>
+      <br><br>
+      <label for="kind"><h3>사료 형태</h3>
+        <input type="checkbox" class="kind" value="chicken"> 건식
+        <input type="checkbox" class="kind" id="kind1" value="duck"> 소프트
+        <input type="checkbox" class="kind" id="kind2" value="beef"> 습식
+        <input type="checkbox" class="kind" id="kind3" value="pork"> 화식
+        <input type="checkbox" class="kind" id="kind4" value="lamb"> 동결건조
+    </label><br>
+    <button id="lstbtn">검색</button>           
+    </div>
+
+</body>
+</html>
+<!-- webpage -->

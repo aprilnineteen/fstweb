@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login.html</title>
+    <style>
+        @font-face {
+        font-family: 'SUIT-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+         } 
+         body{
+            font-family: 'SUIT-Regular';
+            margin : 0 auto;
+            max-width: 500px;
+            max-height: 500px;
+            text-align: center;
+         }
+         .main{
+            transform: translate(0%, 25%);
+         }
+         .main input{
+            height: 45px;
+            color: gray;
+         }
+        #id{
+            margin-bottom: 20px;
+        }
+        #pw{
+            margin-bottom: 20px;
+            list-style: none;
+        }
+        #acount{
+            height: 60px;
+            width: 170px;
+            border: none;
+            margin-top: 5px;
+            color: white;
+            font-weight: bold;
+            background-color: rgb(10,88,74);
+        }
+        #a{
+            margin-bottom: 5px;
+        }
+    </style>
+    <script>
+    function log(){
+        const id=document.getElementById("a").value;
+        const pw=document.getElementById("b").value;
+        const login=document.getElementById("acount").value;
+        let result=document.getElementById("result");
+
+        if(!id){
+                alert("아이디가 입력되지 않았습니다.");
+                document.getElementById("id").focus();
+                return;
+            }else if(!pw){
+                alert("비밀번호가 입력되지 않았습니다.");
+                document.getElementById("pw").focus();
+                return;
+            }
+        
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="main">
+    <h1>로그인</h1>
+    <input type="text" id="a" value="아이디" onfocus="this.value=''"><br>
+    <input type="password" id="b" value="비밀번호" onfocus="this.value=''"><br>
+    <button onclick="log()" id="acount">login</button>
+    </div>
+    <div id="result">
+        
+    </div>
+</body>
+</html>
